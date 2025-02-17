@@ -34,7 +34,7 @@ export const App = () => {
         <button onClick={decreaseCounter}>Decrease</button>
 
 
-        <h1>REDUX</h1>
+        <h1>Now Begining REDUX</h1>
 
         <h1>Counter {reduxCouter}</h1>
 
