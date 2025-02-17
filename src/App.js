@@ -26,6 +26,8 @@ export const App = () => {
     const isLogged = useSelector(state => state.logged);
     const dispatch = useDispatch(); //is used in a React component with Redux (React-Redux) to dispatch actions to the Redux store.
 
+
+    //Doing it for testing github
   return (
     <div>
         <input type='text' onChange={e => setText(e.target.value)}></input>
@@ -34,13 +36,13 @@ export const App = () => {
         <button onClick={decreaseCounter}>Decrease</button>
 
 
-        <h1>Now Begining REDUX</h1>
+        <h1>Now Begining REDUX</h1> 
 
         <h1>Counter {reduxCouter}</h1>
 
-        <button onClick={() =>dispatch(incerment())}>+</button>
+        <button onClick={() =>dispatch(incerment())}>Add</button>
         
-        <button onClick={() =>dispatch(decrement())}>-</button>
+        <button onClick={() =>dispatch(decrement())}>Reduce</button>
 
         {isLogged ? <h3>Valuble info</h3>:''}
 
