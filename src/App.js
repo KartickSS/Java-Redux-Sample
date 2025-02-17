@@ -22,9 +22,9 @@ export const App = () => {
         setCounter(counter - 1);
     }
 
-    const reduxCouter = useSelector(state => state.counter );
+    const reduxCouter = useSelector(state => state.counter ); //A Redux hook that allows a React component to extract a specific piece of state from the Redux store.
     const isLogged = useSelector(state => state.logged);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); //is used in a React component with Redux (React-Redux) to dispatch actions to the Redux store.
 
   return (
     <div>
